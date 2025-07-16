@@ -1,0 +1,7 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Shopping list</h2>
+    <!-- When "Add" is pressed, we should trigger updating the list -->
+    <app-item-form (itemAdded)="refreshList()"></app-item-form>
+    <hr>
+    <app-item-list [reloadTrigger]="reloadFlag"></app-item-list>
+</div>
